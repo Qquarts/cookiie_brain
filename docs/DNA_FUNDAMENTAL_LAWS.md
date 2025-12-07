@@ -240,6 +240,6 @@ DNA는 Cookie의 **근본적인 논리 규칙**과 **구조적 원칙**입니다
 ---
 
 **Version**: 1.0  
-**Last Updated**: 2024  
+**Last Updated**: 2025-12-07  
 **Author**: GNJz (Qquarts)
 

@@ -123,6 +123,6 @@ schema.set_capability(CapabilityCategory.PLASTICITY, "stdp", enabled=True)
 ---
 
 **Version**: 4.3.0  
-**Last Updated**: 2024  
+**Last Updated**: 2025-12-07  
 **Author**: GNJz (Qquarts)
 

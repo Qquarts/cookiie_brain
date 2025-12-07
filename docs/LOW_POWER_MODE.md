@@ -224,6 +224,6 @@ Cookie는 기본적으로 **저전력 모드**로 설정되어 있어:
 ---
 
 **Version**: 1.0  
-**Last Updated**: 2024  
+**Last Updated**: 2025-12-07  
 **Author**: GNJz (Qquarts)
 

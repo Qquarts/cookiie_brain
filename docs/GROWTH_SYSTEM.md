@@ -226,6 +226,6 @@ print(f"다음 단계: {next_info}")
 ---
 
 **Version**: 1.0  
-**Last Updated**: 2024  
+**Last Updated**: 2025-12-07  
 **Author**: GNJz (Qquarts)
 

@@ -252,6 +252,6 @@ python examples/06_cookie_learning_simulation.py
 ---
 
 **Version**: 1.0  
-**Last Updated**: 2024  
+**Last Updated**: 2025-12-07  
 **Author**: GNJz (Qquarts)
 

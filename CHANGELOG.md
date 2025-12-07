@@ -5,7 +5,7 @@ All notable changes to BabyHippo will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [4.3.0] - 2024-12-XX (Cookie v1.0 - 1st Cookie Revolution)
+## [4.3.0] - 2025-12-07 (Cookie v1.0 - 1st Cookie Revolution)
 
 ### 🍪 Added - Cookie v1.0 Features
 - **Concept Neuron Selectivity**: Enhanced pattern separation for individual neurons
@@ -27,7 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fixed conversation context not being utilized
 - Fixed library learning algorithm not triggering
 
-## [4.2.0] - 2024-XX-XX (Body & Soul Edition)
+## [4.2.0] - 2025-XX-XX (Body & Soul Edition)
 
 ### 🆕 Added
 - **Body System**: Complete peripheral nervous system implementation
@@ -52,14 +52,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Memory footprint optimization (Flyweight Pattern for HHSomaQuick)
 - Initialization time reduction
 
-## [4.1.0] - 2024-XX-XX
+## [4.1.0] - 2025-XX-XX
 
 ### 🆕 Added
 - Hippocampal memory system
 - STDP learning mechanism
 - Sleep consolidation
 
-## [4.0.0] - 2024-XX-XX
+## [4.0.0] - 2025-XX-XX
 
 ### 🆕 Initial Release
 - 8 core brain modules

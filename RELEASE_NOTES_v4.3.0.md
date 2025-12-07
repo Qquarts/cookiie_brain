@@ -127,6 +127,6 @@ PHAM-OPEN-2.0
 ---
 
 **Version**: 4.3.0  
-**Release Date**: 2024  
+**Release Date**: 2025-12-07  
 **Author**: GNJz (Qquarts)
 
