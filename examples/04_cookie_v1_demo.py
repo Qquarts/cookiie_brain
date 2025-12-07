@@ -1,5 +1,5 @@
 """
-🍪 Cookie v1.0 Demo - 1차 쿠키 혁명
+🍪 Cookiie v1.0 Demo - 1차 쿠키 혁명
 ====================================
 
 "쿠키는 한 번 본 것을 자고 나서 안정적으로 기억한다"
@@ -13,7 +13,7 @@
     6. "B가 무엇인가요?" → "B는 내가 조금 전에 학습한 글자입니다."
 
 Author: GNJz (Qquarts)
-Version: 1.0 (Cookie Revolution)
+Version: 1.0 (Cookiie Revolution)
 """
 
 import sys
@@ -27,22 +27,22 @@ sys.path.insert(0, str(BABYHIPPO_PATH))
 from babyhippo.integration import CuriousBrain
 
 
-def cookie_v1_demo():
+def cookiie_v1_demo():
     """
-    🍪 Cookie v1.0 데모
+    🍪 Cookiie v1.0 데모
     
     전체 파이프라인:
         CuriousBrain.think() → 해마 → 기억 → 응답
     """
     print("=" * 70)
-    print("🍪 Cookie v1.0 Demo - 1차 쿠키 혁명")
+    print("🍪 Cookiie v1.0 Demo - 1차 쿠키 혁명")
     print("=" * 70)
     print()
     
     # 쿠키 생성
     print("1️⃣ 쿠키 생성 중...")
-    cookie = CuriousBrain(name="cookie")
-    print(f"   ✅ 쿠키 생성 완료: {cookie}")
+    cookiie = CuriousBrain(name="cookiie")
+    print(f"   ✅ 쿠키 생성 완료: {cookiie}")
     print()
     
     # 학습 단계
@@ -59,7 +59,7 @@ def cookie_v1_demo():
     
     for word, meaning in learnings:
         print(f"   📝 학습: '{word}' → '{meaning}'")
-        cookie.learn(f"{word}는 {meaning}", importance=0.8)
+        cookiie.learn(f"{word}는 {meaning}", importance=0.8)
     
     print()
     
@@ -67,7 +67,7 @@ def cookie_v1_demo():
     print("3️⃣ 수면 (기억 공고화)")
     print("-" * 70)
     print("   💤 쿠키가 잠에 빠집니다...")
-    cookie.sleep(cycles=10)
+    cookiie.sleep(cycles=10)
     print("   ☀️ 쿠키가 깨어났습니다!")
     print()
     
@@ -88,7 +88,7 @@ def cookie_v1_demo():
     
     for question in questions:
         print(f"\n   Q: {question}")
-        answer = cookie.think(question)
+        answer = cookiie.think(question)
         print(f"   A: {answer}")
         
         # 정확도 체크 (간단한 키워드 매칭)
@@ -116,7 +116,7 @@ def cookie_v1_demo():
     print()
     
     # 통계
-    stats = cookie.get_stats()
+    stats = cookiie.get_stats()
     print("6️⃣ 통계")
     print("-" * 70)
     print(f"   질문 수: {stats['questions']['questions_asked']}")
@@ -126,7 +126,7 @@ def cookie_v1_demo():
     print()
     
     print("=" * 70)
-    print("🎯 Cookie v1.0 데모 완료!")
+    print("🎯 Cookiie v1.0 데모 완료!")
     print("=" * 70)
     print()
     print("✅ 쿠키는 한 번 본 것을 자고 나서 안정적으로 기억합니다!")
@@ -135,5 +135,5 @@ def cookie_v1_demo():
 
 
 if __name__ == "__main__":
-    cookie_v1_demo()
+    cookiie_v1_demo()
 

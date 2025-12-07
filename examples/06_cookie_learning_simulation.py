@@ -1,7 +1,7 @@
 """
-🍪 Cookie 학습 시뮬레이션 - 4단계 뇌 학습 프로세스
+🍪 Cookiie 학습 시뮬레이션 - 4단계 뇌 학습 프로세스
 
-이 예제는 Cookie가 GPT/LLaMA 같은 대규모 언어 학습이 아닌,
+이 예제는 Cookiie가 GPT/LLaMA 같은 대규모 언어 학습이 아닌,
 "뇌처럼" 학습하는 방식을 시뮬레이션합니다.
 
 4단계 학습 프로세스:
@@ -25,9 +25,9 @@ def print_section(title: str):
     print("=" * 70)
 
 
-def cookie_learning_simulation():
+def cookiie_learning_simulation():
     """
-    Cookie 4단계 학습 시뮬레이션
+    Cookiie 4단계 학습 시뮬레이션
     
     단계:
     1. 개념 뉴런 생성 (단독 개념 입력)
@@ -36,11 +36,11 @@ def cookie_learning_simulation():
     4. 질문으로 회상 테스트
     """
     
-    print_section("🍪 Cookie 학습 시뮬레이션 시작")
+    print_section("🍪 Cookiie 학습 시뮬레이션 시작")
     
-    # Cookie 생성
-    cookie = CuriousBrain(name="Cookie")
-    print(f"✅ Cookie 생성 완료: {cookie.name}")
+    # Cookiie 생성
+    cookiie = CuriousBrain(name="Cookiie")
+    print(f"✅ Cookiie 생성 완료: {cookiie.name}")
     
     # =================================================================
     # ✅ 1단계: 개념 뉴런 생성 (Concept Formation)
@@ -63,8 +63,8 @@ def cookie_learning_simulation():
     for concept in concepts:
         print(f"   학습: {concept}")
         # 직접 learn() 메서드 사용 (더 확실함)
-        cookie.learn(concept, importance=0.8)
-        response = cookie.think(f"학습: {concept}")
+        cookiie.learn(concept, importance=0.8)
+        response = cookiie.think(f"학습: {concept}")
         print(f"   → {response}")
         time.sleep(0.1)  # 짧은 대기
     
@@ -95,8 +95,8 @@ def cookie_learning_simulation():
     for assoc in associations:
         print(f"   학습: {assoc}")
         # 직접 learn() 메서드 사용
-        cookie.learn(assoc, importance=0.8)
-        response = cookie.think(f"학습: {assoc}")
+        cookiie.learn(assoc, importance=0.8)
+        response = cookiie.think(f"학습: {assoc}")
         print(f"   → {response}")
         time.sleep(0.1)
     
@@ -116,7 +116,7 @@ def cookie_learning_simulation():
     print()
     
     print("💤 수면 시작...")
-    sleep_result = cookie.sleep(cycles=5)
+    sleep_result = cookiie.sleep(cycles=5)
     print(f"   → {sleep_result}")
     
     print("\n✅ 수면 완료!")
@@ -143,7 +143,7 @@ def cookie_learning_simulation():
     correct_count = 0
     for question in test_questions:
         print(f"\n   질문: {question}")
-        answer = cookie.think(question)
+        answer = cookiie.think(question)
         print(f"   답변: {answer}")
         
         # 정확도 체크 (간단한 키워드 매칭)
@@ -177,28 +177,28 @@ def cookie_learning_simulation():
         print("❌ 학습 실패 (60% 미만)")
     
     # 통계 출력
-    stats = cookie.get_stats()
-    print(f"\n📈 Cookie 통계:")
+    stats = cookiie.get_stats()
+    print(f"\n📈 Cookiie 통계:")
     print(f"   기억 수: {stats.get('memory_count', 0)}")
     print(f"   학습 횟수: {stats.get('learning_count', 0)}")
-    print(f"   성장 단계: {cookie.get_growth_stage()}")
+    print(f"   성장 단계: {cookiie.get_growth_stage()}")
     
     return accuracy >= 98
 
 
-def cookie_advanced_learning_example():
+def cookiie_advanced_learning_example():
     """
     고급 학습 예제: 더 복잡한 개념 학습
     """
     print_section("🚀 고급 학습 예제")
     
-    cookie = CuriousBrain(name="Cookie")
+    cookiie = CuriousBrain(name="Cookiie")
     
     # 1. 개념 생성
     print("1️⃣ 개념 뉴런 생성:")
     concepts = ["고양이", "강아지", "동물", "귀여움", "사랑"]
     for concept in concepts:
-        cookie.think(f"학습: {concept}")
+        cookiie.think(f"학습: {concept}")
         print(f"   ✅ {concept}")
     
     # 2. 연결 형성
@@ -212,12 +212,12 @@ def cookie_advanced_learning_example():
         "강아지는 사랑",
     ]
     for assoc in associations:
-        cookie.think(f"학습: {assoc}")
+        cookiie.think(f"학습: {assoc}")
         print(f"   ✅ {assoc}")
     
     # 3. 수면
     print("\n3️⃣ 수면:")
-    cookie.sleep(cycles=5)
+    cookiie.sleep(cycles=5)
     print("   ✅ 수면 완료")
     
     # 4. 회상 테스트
@@ -228,7 +228,7 @@ def cookie_advanced_learning_example():
         "고양이는 귀여워?",
     ]
     for question in questions:
-        answer = cookie.think(question)
+        answer = cookiie.think(question)
         print(f"   Q: {question}")
         print(f"   A: {answer}")
         print()
@@ -237,10 +237,10 @@ def cookie_advanced_learning_example():
 if __name__ == "__main__":
     print("""
     ╔══════════════════════════════════════════════════════════════════╗
-    ║  🍪 Cookie 학습 시뮬레이션 - 4단계 뇌 학습 프로세스            ║
+    ║  🍪 Cookiie 학습 시뮬레이션 - 4단계 뇌 학습 프로세스            ║
     ╚══════════════════════════════════════════════════════════════════╝
     
-    이 예제는 Cookie가 "뇌처럼" 학습하는 방식을 시뮬레이션합니다.
+    이 예제는 Cookiie가 "뇌처럼" 학습하는 방식을 시뮬레이션합니다.
     
     4단계:
     1. 개념 뉴런 생성 (단독 개념 입력)
@@ -251,13 +251,13 @@ if __name__ == "__main__":
     """)
     
     # 기본 학습 시뮬레이션
-    success = cookie_learning_simulation()
+    success = cookiie_learning_simulation()
     
     if success:
         print("\n" + "=" * 70)
         print("✅ 기본 학습 성공! 고급 예제를 실행합니다.")
         print("=" * 70)
-        cookie_advanced_learning_example()
+        cookiie_advanced_learning_example()
     
     print("\n" + "=" * 70)
     print("🎉 학습 시뮬레이션 완료!")

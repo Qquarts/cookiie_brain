@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-🍪 Cookie 간단한 학습 데모
+🍪 Cookiie 간단한 학습 데모
 
 4단계 학습 프로세스를 간단하게 시뮬레이션합니다.
 
@@ -22,13 +22,13 @@ from babyhippo.integration import CuriousBrain
 
 def main():
     print("=" * 70)
-    print("🍪 Cookie 간단한 학습 데모")
+    print("🍪 Cookiie 간단한 학습 데모")
     print("=" * 70)
     print()
     
-    # Cookie 생성
-    cookie = CuriousBrain(name="Cookie")
-    print(f"✅ Cookie 생성 완료\n")
+    # Cookiie 생성
+    cookiie = CuriousBrain(name="Cookiie")
+    print(f"✅ Cookiie 생성 완료\n")
     
     # =================================================================
     # 1단계: 개념 뉴런 생성
@@ -39,7 +39,7 @@ def main():
     concepts = ["사과", "빨간색", "달다"]
     for concept in concepts:
         print(f"   학습: {concept}")
-        cookie.learn(concept, importance=0.8)
+        cookiie.learn(concept, importance=0.8)
         print(f"   ✅ 저장됨")
     print()
     
@@ -57,7 +57,7 @@ def main():
     
     for assoc in associations:
         print(f"   학습: {assoc}")
-        cookie.learn(assoc, importance=0.8)
+        cookiie.learn(assoc, importance=0.8)
         print(f"   ✅ 연결 강화됨")
     print()
     
@@ -67,7 +67,7 @@ def main():
     print("3️⃣ 수면 공고화")
     print("-" * 70)
     print("   💤 수면 중...")
-    cookie.sleep(cycles=3)
+    cookiie.sleep(cycles=3)
     print("   ✅ 수면 완료\n")
     
     # =================================================================
@@ -83,7 +83,7 @@ def main():
     
     for question in questions:
         print(f"   Q: {question}")
-        answer = cookie.think(question)
+        answer = cookiie.think(question)
         print(f"   A: {answer}")
         print()
     

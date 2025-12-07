@@ -214,8 +214,8 @@ EVOLUTION_STAGES = {
                 NetworkFeature.MEMORY_CONSOLIDATION,  # 수면 주기 기반 memory consolidation
             ],
             # 커스텀 검증: Alpha Genome Test 통과 (5개 개념 뉴런 선택성 98% 이상)
-            custom_validator=lambda cookie, perf: (
-                _validate_alpha_genome(cookie, selectivity_threshold=0.98),
+            custom_validator=lambda cookiie, perf: (
+                _validate_alpha_genome(cookiie, selectivity_threshold=0.98),
                 []
             ),
         ),
@@ -253,8 +253,8 @@ EVOLUTION_STAGES = {
             ],
             stability_test=True,  # HH/Izhikevich 혼합 네트워크 안정화
             # 커스텀 검증: 패턴 완성 테스트 통과 (입력 "GNJ_" → 출력 "GNJz", 잡음 30% 섞여도 복원)
-            custom_validator=lambda cookie, perf: (
-                _validate_pattern_completion(cookie, noise_level=0.3, success_rate=0.95),
+            custom_validator=lambda cookiie, perf: (
+                _validate_pattern_completion(cookiie, noise_level=0.3, success_rate=0.95),
                 []
             ),
         ),
@@ -377,8 +377,8 @@ EVOLUTION_STAGES = {
             stability_test=True,
             robustness_test=True,  # Noise + Robustness 테스트 합격
             # 커스텀 검증: 단기 → 장기 기억의 자동 전환 비율 90%, 에피소드 기억 검증
-            custom_validator=lambda cookie, perf: (
-                _validate_episodic_memory(cookie, consolidation_rate=0.9),
+            custom_validator=lambda cookiie, perf: (
+                _validate_episodic_memory(cookiie, consolidation_rate=0.9),
                 []
             ),
         ),
@@ -437,8 +437,8 @@ EVOLUTION_STAGES = {
             stability_test=True,
             robustness_test=True,
             # 커스텀 검증: 개념 네트워크 자율 확장, 새로운 단어 등장 → 자동 의미군 생성
-            custom_validator=lambda cookie, perf: (
-                _validate_symbolic_abstraction(cookie),
+            custom_validator=lambda cookiie, perf: (
+                _validate_symbolic_abstraction(cookiie),
                 []
             ),
         ),
@@ -531,7 +531,7 @@ EVOLUTION_STAGES = {
 # 🔍 커스텀 검증 함수들 (생물학적 기준)
 # =============================================================================
 
-def _validate_alpha_genome(cookie, selectivity_threshold: float = 0.98) -> bool:
+def _validate_alpha_genome(cookiie, selectivity_threshold: float = 0.98) -> bool:
     """
     Alpha Genome Test: 5개 개념 뉴런 선택성 98% 이상
     
@@ -544,7 +544,7 @@ def _validate_alpha_genome(cookie, selectivity_threshold: float = 0.98) -> bool:
     return False  # 임시
 
 
-def _validate_pattern_completion(cookie, noise_level: float = 0.3, success_rate: float = 0.95) -> bool:
+def _validate_pattern_completion(cookiie, noise_level: float = 0.3, success_rate: float = 0.95) -> bool:
     """
     패턴 완성 테스트: 입력 "GNJ_" → 출력 "GNJz", 잡음 30% 섞여도 복원
     
@@ -558,7 +558,7 @@ def _validate_pattern_completion(cookie, noise_level: float = 0.3, success_rate:
     return False  # 임시
 
 
-def _validate_long_term_memory(cookie, retention_rate: float = 0.8, time_hours: int = 24) -> bool:
+def _validate_long_term_memory(cookiie, retention_rate: float = 0.8, time_hours: int = 24) -> bool:
     """
     장기기억 recall 안정화: 24시간 지나도 80% 패턴 유지
     
@@ -572,7 +572,7 @@ def _validate_long_term_memory(cookie, retention_rate: float = 0.8, time_hours: 
     return False  # 임시
 
 
-def _validate_episodic_memory(cookie, consolidation_rate: float = 0.9) -> bool:
+def _validate_episodic_memory(cookiie, consolidation_rate: float = 0.9) -> bool:
     """
     에피소드 기억 검증: 단기 → 장기 기억의 자동 전환 비율 90%
     
@@ -586,7 +586,7 @@ def _validate_episodic_memory(cookie, consolidation_rate: float = 0.9) -> bool:
     return False  # 임시
 
 
-def _validate_symbolic_abstraction(cookie) -> bool:
+def _validate_symbolic_abstraction(cookiie) -> bool:
     """
     상징 추상화 검증: 개념 네트워크 자율 확장
     
@@ -612,7 +612,7 @@ class EvolutionValidator:
     
     def validate_stage(self,
                       stage_name: str,
-                      cookie,  # CuriousBrain 인스턴스
+                      cookiie,  # CuriousBrain 인스턴스
                       performance: Dict) -> Tuple[bool, List[str], Dict[str, Any]]:
         """
         단계 달성 조건 검증
@@ -637,7 +637,7 @@ class EvolutionValidator:
         
         # 2. 기술적 요구사항 검증
         tech_ok, tech_failed, tech_details = self._validate_technical_requirements(
-            stage.technical_requirements, cookie
+            stage.technical_requirements, cookiie
         )
         failed_conditions.extend(tech_failed)
         validation_details['technical'] = {
@@ -647,7 +647,7 @@ class EvolutionValidator:
         
         # 3. 커스텀 검증 함수 실행
         if stage.technical_requirements.custom_validator:
-            custom_ok, custom_failed = stage.technical_requirements.custom_validator(cookie, performance)
+            custom_ok, custom_failed = stage.technical_requirements.custom_validator(cookiie, performance)
             if not custom_ok:
                 failed_conditions.extend(custom_failed)
             validation_details['custom'] = {
@@ -688,13 +688,13 @@ class EvolutionValidator:
     
     def _validate_technical_requirements(self,
                                         requirements: TechnicalRequirement,
-                                        cookie) -> Tuple[bool, List[str], Dict[str, Any]]:
+                                        cookiie) -> Tuple[bool, List[str], Dict[str, Any]]:
         """기술적 요구사항 검증"""
         failed = []
         details = {}
         
         # 뉴런 수 검증 (범위 기반 우선, 고정값은 하위 호환성)
-        stats = cookie.get_stats() if hasattr(cookie, 'get_stats') else {}
+        stats = cookiie.get_stats() if hasattr(cookiie, 'get_stats') else {}
         actual_neuron_count = stats.get('neuron_count', 0)
         
         # 범위 기반 검증 (우선)
@@ -766,7 +766,7 @@ class EvolutionValidator:
         details['features'] = {}
         for feature in requirements.required_features:
             # TODO: 실제 기능 구현 여부 확인
-            feature_implemented = self._check_feature_implementation(feature, cookie)
+            feature_implemented = self._check_feature_implementation(feature, cookiie)
             details['features'][feature.value] = feature_implemented
             if not feature_implemented:
                 failed.append(f"기능 미구현: {feature.value}")
@@ -775,45 +775,45 @@ class EvolutionValidator:
         details['models'] = {}
         for model in requirements.required_models:
             # TODO: 실제 모델 사용 여부 확인
-            model_used = self._check_model_usage(model, cookie)
+            model_used = self._check_model_usage(model, cookiie)
             details['models'][model.value] = model_used
             if not model_used:
                 failed.append(f"모델 미사용: {model.value}")
         
         # 안정성 테스트
         if requirements.stability_test:
-            stability_ok = self._run_stability_test(cookie)
+            stability_ok = self._run_stability_test(cookiie)
             details['stability_test'] = stability_ok
             if not stability_ok:
                 failed.append("안정성 테스트 실패")
         
         # 견고성 테스트
         if requirements.robustness_test:
-            robustness_ok = self._run_robustness_test(cookie)
+            robustness_ok = self._run_robustness_test(cookiie)
             details['robustness_test'] = robustness_ok
             if not robustness_ok:
                 failed.append("견고성 테스트 실패")
         
         return len(failed) == 0, failed, details
     
-    def _check_feature_implementation(self, feature: NetworkFeature, cookie) -> bool:
+    def _check_feature_implementation(self, feature: NetworkFeature, cookiie) -> bool:
         """기능 구현 여부 확인"""
         # TODO: 실제 구현 확인 로직
-        # 예: cookie의 stats나 내부 상태에서 확인
+        # 예: cookiie의 stats나 내부 상태에서 확인
         return False  # 임시
     
-    def _check_model_usage(self, model: NeuronModel, cookie) -> bool:
+    def _check_model_usage(self, model: NeuronModel, cookiie) -> bool:
         """모델 사용 여부 확인"""
         # TODO: 실제 모델 사용 확인 로직
         return False  # 임시
     
-    def _run_stability_test(self, cookie) -> bool:
+    def _run_stability_test(self, cookiie) -> bool:
         """안정성 테스트 실행"""
         # TODO: 실제 안정성 테스트 로직
         # 예: 장시간 실행, 메모리 누수 확인 등
         return False  # 임시
     
-    def _run_robustness_test(self, cookie) -> bool:
+    def _run_robustness_test(self, cookiie) -> bool:
         """견고성 테스트 실행"""
         # TODO: 실제 견고성 테스트 로직
         # 예: 노이즈 추가, 예외 상황 처리 등
@@ -960,7 +960,7 @@ class HippoEvolutionSystem:
             print(f"⚠️ 달성 기록 저장 실패: {e}")
     
     def check_evolution(self,
-                       cookie,
+                       cookiie,
                        performance: Dict,
                        user_id: str = "anonymous") -> Dict:
         """
@@ -970,13 +970,13 @@ class HippoEvolutionSystem:
             달성 결과 딕셔너리
         """
         # 모든 단계 확인 (현재 단계부터)
-        current_stage = self._get_current_stage(cookie, performance)
+        current_stage = self._get_current_stage(cookiie, performance)
         stages_to_check = self._get_next_stages(current_stage)
         
         results = []
         for stage_name in stages_to_check:
             result = self._check_stage_achievement(
-                stage_name, cookie, performance, user_id
+                stage_name, cookiie, performance, user_id
             )
             results.append(result)
         
@@ -985,7 +985,7 @@ class HippoEvolutionSystem:
             'check_results': results,
         }
     
-    def _get_current_stage(self, cookie, performance: Dict) -> str:
+    def _get_current_stage(self, cookiie, performance: Dict) -> str:
         """현재 단계 확인"""
         # 성능 기반으로 현재 단계 판단
         for stage_name in reversed(list(EVOLUTION_STAGES.keys())):
@@ -1009,7 +1009,7 @@ class HippoEvolutionSystem:
     
     def _check_stage_achievement(self,
                                 stage_name: str,
-                                cookie,
+                                cookiie,
                                 performance: Dict,
                                 user_id: str) -> Dict:
         """단계 달성 확인"""
@@ -1023,7 +1023,7 @@ class HippoEvolutionSystem:
         
         # 조건 검증
         achieved, failed, details = self.validator.validate_stage(
-            stage_name, cookie, performance
+            stage_name, cookiie, performance
         )
         
         if not achieved:

@@ -5,9 +5,9 @@ All notable changes to BabyHippo will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [4.3.0] - 2025-12-07 (Cookie v1.0 - 1st Cookie Revolution)
+## [4.3.0] - 2025-12-07 (Cookiie v1.0 - 1st Cookiie Revolution)
 
-### 🍪 Added - Cookie v1.0 Features
+### 🍪 Added - Cookiie v1.0 Features
 - **Concept Neuron Selectivity**: Enhanced pattern separation for individual neurons
 - **Sleep/Consolidation/Recall Tuning**: Improved memory consolidation accuracy (70% → 90%)
 - **Conversation Context Management**: Added context tracking for natural dialogue
@@ -70,7 +70,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Version History
 
-- **4.3.0**: Cookie v1.0 - 1st Cookie Revolution (Current)
+- **4.3.0**: Cookiie v1.0 - 1st Cookiie Revolution (Current)
 - **4.2.0**: Body & Soul Edition
 - **4.1.0**: Hippocampal Memory System
 - **4.0.0**: Initial Release

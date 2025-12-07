@@ -401,7 +401,7 @@ evolution = create_evolution_system(blockchain_enabled=True)
 
 # 진화 단계 달성 확인
 result = evolution.check_evolution(
-    cookie=curious_brain,
+    cookiie=curious_brain,
     performance=performance_data,
     user_id="user123"
 )
@@ -417,7 +417,7 @@ if result['check_results'][0]['achieved']:
 
 ```python
 # CuriousBrain의 내부 상태 확인
-stats = cookie.get_stats()
+stats = cookiie.get_stats()
 
 # 내부 상태 플래그
 internal_flags = stats['internal_flags']
@@ -438,18 +438,18 @@ from babyhippo.integration import (
     benchmark_performance,
 )
 
-# Cookie 생성
-cookie = CuriousBrain(name="Cookie")
+# Cookiie 생성
+cookiie = CuriousBrain(name="Cookiie")
 
 # 성능 벤치마크 측정
-performance = benchmark_performance(cookie)
+performance = benchmark_performance(cookiie)
 
 # 진화 시스템 생성
 evolution = create_evolution_system(blockchain_enabled=True)
 
 # 진화 단계 달성 확인
 result = evolution.check_evolution(
-    cookie=cookie,
+    cookiie=cookiie,
     performance=performance,
     user_id="user123"
 )

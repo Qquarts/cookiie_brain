@@ -14,7 +14,7 @@
 - utils/       : 유틸리티
 
 Author: GNJz (Qquarts)
-Version: 4.3.0 (Cookie v1.0 - 1st Cookie Revolution)
+Version: 4.3.0 (Cookiie v1.0 - 1st Cookiie Revolution)
 """
 
 __version__ = "4.3.0"

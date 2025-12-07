@@ -132,11 +132,11 @@ BabyHippo는 단순한 프로그램이 아니라, **학습하고 성장하는 �
 ```python
 from babyhippo.integration import GrowthAchievement, benchmark_performance, CuriousBrain
 
-# Cookie 생성
-cookie = CuriousBrain(name="Cookie")
+# Cookiie 생성
+cookiie = CuriousBrain(name="Cookiie")
 
 # 성능 벤치마크 측정
-performance = benchmark_performance(cookie)
+performance = benchmark_performance(cookiie)
 
 # 달성 시스템 초기화
 achievement = GrowthAchievement()
@@ -160,12 +160,12 @@ if result['achieved']:
 ### 성장 단계 확인
 
 ```python
-# Cookie의 현재 성장 단계 확인
-stage = cookie._get_growth_stage()
+# Cookiie의 현재 성장 단계 확인
+stage = cookiie._get_growth_stage()
 print(f"현재 단계: {stage}")
 
 # 다음 단계 정보
-next_info = cookie._get_next_stage_info()
+next_info = cookiie._get_next_stage_info()
 print(f"다음 단계: {next_info}")
 ```
 

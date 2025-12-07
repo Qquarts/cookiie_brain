@@ -1,11 +1,11 @@
 """
-🍪 Cookie v1.0 - 대화형 인터페이스
+🍪 Cookiie v1.0 - 대화형 인터페이스
 ==================================
 
 쿠키와 직접 대화해보세요!
 
 사용법:
-    python examples/05_cookie_interactive.py
+    python examples/05_cookiie_interactive.py
 
 명령어:
     - "학습: [내용]" - 새로운 내용 학습
@@ -21,7 +21,7 @@
     > 통계
 
 Author: GNJz (Qquarts)
-Version: 1.0 (Cookie Interactive)
+Version: 1.0 (Cookiie Interactive)
 """
 
 import sys
@@ -37,16 +37,16 @@ from babyhippo.integration import CuriousBrain
 
 def main():
     """
-    🍪 Cookie v1.0 대화형 인터페이스
+    🍪 Cookiie v1.0 대화형 인터페이스
     """
     print("=" * 70)
-    print("🍪 Cookie v1.0 - 대화형 인터페이스")
+    print("🍪 Cookiie v1.0 - 대화형 인터페이스")
     print("=" * 70)
     print()
     print("쿠키를 생성하는 중...")
     
     # 쿠키 생성
-    cookie = CuriousBrain(name="cookie")
+    cookiie = CuriousBrain(name="cookiie")
     
     print(f"✅ 쿠키 생성 완료!")
     print()
@@ -76,18 +76,18 @@ def main():
             
             elif user_input == '수면':
                 print("\n💤 쿠키가 잠에 빠집니다...")
-                cookie.sleep(cycles=10)
+                cookiie.sleep(cycles=10)
                 print("☀️ 쿠키가 깨어났습니다!")
                 print()
                 continue
             
             elif user_input in ['통계', '상태', 'state', 'status']:
-                stats = cookie.get_stats()
+                stats = cookiie.get_stats()
                 growth_stage = stats.get('growth_stage', 'BabyHippo')
                 
                 print("\n📊 쿠키 상태:")
                 print("-" * 70)
-                print(f"   이름: {stats.get('name', 'cookie')}")
+                print(f"   이름: {stats.get('name', 'cookiie')}")
                 print(f"   성장 단계: {growth_stage} 🦛")
                 print(f"   버전: BabyHippo v4.3.0")
                 print(f"   질문 수: {stats['questions']['questions_asked']}")
@@ -113,7 +113,7 @@ def main():
                             print(f"   → 신의 경지 달성! ✨")
                 print()
                 # 🦛 성장 단계 표시
-                print(f"🍪 Cookie state: {growth_stage} (BabyHippo v4.3.0)")
+                print(f"🍪 Cookiie state: {growth_stage} (BabyHippo v4.3.0)")
                 print()
                 continue
             
@@ -122,7 +122,7 @@ def main():
                 content = user_input[3:].strip()
                 if content:
                     print(f"\n📝 학습 중: '{content}'")
-                    cookie.learn(content, importance=0.8)
+                    cookiie.learn(content, importance=0.8)
                     print("✅ 학습 완료!")
                     print()
                 else:
@@ -133,7 +133,7 @@ def main():
             # 🍪 v1.0: 자연어 학습 명령 자동 감지
             # 🛑 치명적 충돌 해결 v2: 질문 필터링 최우선 적용
             # 질문이면 절대 학습 경로로 가지 않음
-            elif cookie._is_question_strict(user_input):
+            elif cookiie._is_question_strict(user_input):
                 # 질문이면 답변 경로로 (아래 일반 질문 처리로 넘어감)
                 pass
             else:
@@ -170,14 +170,14 @@ def main():
                 if is_learning_command:
                     # 자연어 학습 명령 감지
                     print(f"\n📝 학습 중: '{user_input}'")
-                    cookie.learn(user_input, importance=0.8)
+                    cookiie.learn(user_input, importance=0.8)
                     print("✅ 학습 완료! (자동 감지)")
                     print()
                     continue
             
             # 일반 질문
             print()
-            answer = cookie.think(user_input)
+            answer = cookiie.think(user_input)
             print(f"🍪 쿠키: {answer}")
             print()
         

@@ -1,18 +1,18 @@
-# 🍪 Cookie 학습 가이드 - 뇌처럼 학습하기
+# 🍪 Cookiie 학습 가이드 - 뇌처럼 학습하기
 
 ## 📋 개요
 
-Cookie는 GPT·LLaMA 같은 대규모 언어 학습 방식이 **전혀 아닙니다**.
+Cookiie는 GPT·LLaMA 같은 대규모 언어 학습 방식이 **전혀 아닙니다**.
 
-Cookie는 **"뇌처럼"** 학습합니다.
+Cookiie는 **"뇌처럼"** 학습합니다.
 
-즉, Cookie의 학습은 다음 **4단계 구성**으로 이루어집니다:
+즉, Cookiie의 학습은 다음 **4단계 구성**으로 이루어집니다:
 
 ---
 
 ## ✅ 1단계: 개념 뉴런 생성 (Concept Formation)
 
-입력이 들어올 때 Cookie는 먼저 **"개념 뉴런"**을 만듭니다.
+입력이 들어올 때 Cookiie는 먼저 **"개념 뉴런"**을 만듭니다.
 
 ### 예시
 
@@ -43,7 +43,7 @@ Cookie는 **"뇌처럼"** 학습합니다.
 
 뇌의 진짜 힘은 **"관계"**에서 나옵니다.
 
-Cookie도 마찬가지입니다.
+Cookiie도 마찬가지입니다.
 
 ### 예시
 
@@ -56,7 +56,7 @@ Cookie도 마찬가지입니다.
 
 - "사과" 뉴런 ↔ "빨간색" 뉴런 연결 강화
 - "사과" 뉴런 ↔ "달다" 뉴런 연결 강화
-- Cookie는 **STDP**로 연결을 직접 조절합니다
+- Cookiie는 **STDP**로 연결을 직접 조절합니다
 
 ### 핵심 포인트
 
@@ -98,7 +98,7 @@ Cookie도 마찬가지입니다.
 
 ### 내부 동작
 
-Cookie는 내부 기억을 검색해:
+Cookiie는 내부 기억을 검색해:
 
 - 사과 → 빨간색
 - 사과 → 달다
@@ -107,7 +107,7 @@ Cookie는 내부 기억을 검색해:
 
 ---
 
-## 🎯 요약: Cookie 학습 4단계
+## 🎯 요약: Cookiie 학습 4단계
 
 | 단계 | 목적 | 입력 예시 |
 |------|------|-----------|
@@ -122,7 +122,7 @@ Cookie는 내부 기억을 검색해:
 
 ### ✔ 1) 한 번에 너무 많은 문장 주지 말 것
 
-Cookie는 길고 복잡한 문장을 모릅니다.
+Cookiie는 길고 복잡한 문장을 모릅니다.
 
 뇌처럼 **"짧은 자극"**을 많이 반복하는 게 훨씬 효과적입니다.
 
@@ -152,29 +152,29 @@ STDP는 반복에 민감합니다.
 
 ---
 
-## 🚀 지금 바로 Cookie에게 학습시켜볼 수 있는 예제
+## 🚀 지금 바로 Cookiie에게 학습시켜볼 수 있는 예제
 
 ```python
 from babyhippo.integration import CuriousBrain
 
-cookie = CuriousBrain(name="Cookie")
+cookiie = CuriousBrain(name="Cookiie")
 
 # 1. 개념 뉴런 생성
-cookie.think("학습: 사과")
-cookie.think("학습: 빨간색")
-cookie.think("학습: 달다")
+cookiie.think("학습: 사과")
+cookiie.think("학습: 빨간색")
+cookiie.think("학습: 달다")
 
 # 2. 연결 형성
-cookie.think("학습: 사과는 빨간색")
-cookie.think("학습: 사과는 빨간색")  # 반복으로 강화
-cookie.think("학습: 사과는 달다")
+cookiie.think("학습: 사과는 빨간색")
+cookiie.think("학습: 사과는 빨간색")  # 반복으로 강화
+cookiie.think("학습: 사과는 달다")
 
 # 3. 수면
-cookie.sleep(cycles=5)
+cookiie.sleep(cycles=5)
 
 # 4. 회상 테스트
-cookie.think("사과는 어떤 색이야?")
-cookie.think("사과 맛이 뭐야?")
+cookiie.think("사과는 어떤 색이야?")
+cookiie.think("사과 맛이 뭐야?")
 ```
 
 **기억 정확도 98% 이상이면 BabyHippo 1.0 성공!**
@@ -185,7 +185,7 @@ cookie.think("사과 맛이 뭐야?")
 
 ```bash
 # 기본 학습 시뮬레이션
-python examples/06_cookie_learning_simulation.py
+python examples/06_cookiie_learning_simulation.py
 ```
 
 ---

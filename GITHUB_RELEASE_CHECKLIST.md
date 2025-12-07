@@ -32,9 +32,9 @@
 ### 4. 예제 및 테스트
 - [x] `examples/` - 예제 코드
   - [x] `01_basic_usage.py`
-  - [x] `04_cookie_v1_demo.py`
-  - [x] `05_cookie_interactive.py`
-  - [x] `06_cookie_learning_simulation.py`
+  - [x] `04_cookiie_v1_demo.py`
+  - [x] `05_cookiie_interactive.py`
+  - [x] `06_cookiie_learning_simulation.py`
   - [x] `07_simple_learning_demo.py`
 - [x] `tests/` - 테스트 코드
   - [x] `test_alpha_genome.py`
@@ -155,7 +155,7 @@ rm -rf .DS_Store
 
 2. **Release 태그 생성**
    ```bash
-   git tag -a v4.3.0 -m "Cookie v1.0 - 1차 쿠키 혁명"
+   git tag -a v4.3.0 -m "Cookiie v1.0 - 1차 쿠키 혁명"
    git push origin v4.3.0
    ```
 

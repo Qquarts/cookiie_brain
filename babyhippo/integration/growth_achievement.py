@@ -349,12 +349,12 @@ class GrowthAchievement:
         return base_reward
 
 
-def benchmark_performance(cookie) -> Dict:
+def benchmark_performance(cookiie) -> Dict:
     """
-    Cookie 성능 벤치마크 측정
+    Cookiie 성능 벤치마크 측정
     
     Args:
-        cookie: CuriousBrain 인스턴스
+        cookiie: CuriousBrain 인스턴스
     
     Returns:
         성능 측정 결과
@@ -369,7 +369,7 @@ def benchmark_performance(cookie) -> Dict:
         memory_mb = process.memory_info().rss / 1024 / 1024
     except ImportError:
         # psutil 없으면 대략적 추정 (기억 수 기반)
-        stats = cookie.get_stats()
+        stats = cookiie.get_stats()
         memory_count = 0
         if 'brain' in stats and 'hippo' in stats['brain']:
             memory_count = stats['brain']['hippo'].get('word_count', 0)
@@ -379,11 +379,11 @@ def benchmark_performance(cookie) -> Dict:
     # 응답 속도 측정
     test_question = "안녕"
     start_time = time.time()
-    cookie.think(test_question)
+    cookiie.think(test_question)
     response_time_ms = (time.time() - start_time) * 1000
     
     # 통계에서 정보 가져오기
-    stats = cookie.get_stats()
+    stats = cookiie.get_stats()
     memory_count = 0
     independence = 0.0
     

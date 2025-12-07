@@ -1,10 +1,10 @@
-# 🍪 BabyHippo v4.3.0 - Cookie v1.0 (1st Cookie Revolution)
+# 🍪 BabyHippo v4.3.0 - Cookiie v1.0 (1st Cookiie Revolution)
 
 ## 🎉 첫 공개 릴리즈!
 
 BabyHippo는 **생물학적으로 영감을 받은 AI 메모리 시스템**으로, 인간의 뇌 구조와 기능을 모방합니다.
 
-이번 릴리즈는 **"1st Cookie Revolution"**으로, Cookie AI의 핵심 기능들이 완성되었습니다.
+이번 릴리즈는 **"1st Cookiie Revolution"**으로, Cookiie AI의 핵심 기능들이 완성되었습니다.
 
 ---
 
@@ -31,7 +31,7 @@ BabyHippo는 **생물학적으로 영감을 받은 AI 메모리 시스템**으�
 - **확장 가능한 능력 플래그**: memory, network, plasticity, physiology, cognition, integration
 - **커뮤니티 확장 용이**: Schema 기반 구조
 
-### 🍪 Cookie AI
+### 🍪 Cookiie AI
 - **자연어 학습**: "나는 GNJz라고 해" → 자동 학습
 - **대화 맥락 관리**: 연속 대화 지원
 - **기억 시스템**: 해마 → 개인 LLM → 대형 도서관(LLM API)
@@ -53,14 +53,14 @@ pip install -e ".[all]"
 ```python
 from babyhippo.integration import CuriousBrain
 
-# Cookie 생성
-cookie = CuriousBrain(name="Cookie")
+# Cookiie 생성
+cookiie = CuriousBrain(name="Cookiie")
 
 # 학습
-cookie.think("나는 GNJz라고 해")
+cookiie.think("나는 GNJz라고 해")
 
 # 질문
-response = cookie.think("너 이름이 뭐야?")
+response = cookiie.think("너 이름이 뭐야?")
 print(response)  # "GNJz입니다!"
 ```
 
@@ -70,11 +70,11 @@ print(response)  # "GNJz입니다!"
 # 기본 사용법
 python examples/01_basic_usage.py
 
-# Cookie v1.0 데모
-python examples/04_cookie_v1_demo.py
+# Cookiie v1.0 데모
+python examples/04_cookiie_v1_demo.py
 
 # 대화형 인터페이스
-python examples/05_cookie_interactive.py
+python examples/05_cookiie_interactive.py
 ```
 
 ---

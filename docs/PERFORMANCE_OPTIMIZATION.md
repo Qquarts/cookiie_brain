@@ -1,4 +1,4 @@
-# ⚡ Cookie 성능 최적화 가이드
+# ⚡ Cookiie 성능 최적화 가이드
 
 ## 🔥 발열 문제 해결
 
@@ -28,7 +28,7 @@
 from babyhippo.integration import LiteBrain
 
 # 경량 버전 (뉴런 모델 없음, 메모리 최소화)
-brain = LiteBrain(name="cookie")
+brain = LiteBrain(name="cookiie")
 ```
 
 **장점**:
@@ -47,8 +47,8 @@ brain = LiteBrain(name="cookie")
 ```python
 from babyhippo.integration import CuriousBrain
 
-cookie = CuriousBrain(name="cookie")
-cookie.config['use_personal_llm'] = False  # 개인 LLM 비활성화
+cookiie = CuriousBrain(name="cookiie")
+cookiie.config['use_personal_llm'] = False  # 개인 LLM 비활성화
 ```
 
 **효과**:
@@ -64,8 +64,8 @@ cookie.config['use_personal_llm'] = False  # 개인 LLM 비활성화
 from babyhippo.integration import CuriousBrain
 
 # 모델 경로를 None으로 설정
-cookie = CuriousBrain(
-    name="cookie",
+cookiie = CuriousBrain(
+    name="cookiie",
     personal_model_path=None  # 명시적으로 None
 )
 ```
@@ -109,8 +109,8 @@ brain = BrainLLM(device='cpu')
 ```python
 from babyhippo.integration import CuriousBrain
 
-cookie = CuriousBrain(name="cookie")
-cookie.config['use_personal_llm'] = False  # 개인 LLM 비활성화
+cookiie = CuriousBrain(name="cookiie")
+cookiie.config['use_personal_llm'] = False  # 개인 LLM 비활성화
 ```
 
 ### 데스크탑 (성능 우선)
@@ -118,7 +118,7 @@ cookie.config['use_personal_llm'] = False  # 개인 LLM 비활성화
 ```python
 from babyhippo.integration import CuriousBrain
 
-cookie = CuriousBrain(name="cookie")
+cookiie = CuriousBrain(name="cookiie")
 # 기본 설정 사용 (모든 기능 활성화)
 ```
 
@@ -127,7 +127,7 @@ cookie = CuriousBrain(name="cookie")
 ```python
 from babyhippo.integration import LiteBrain
 
-brain = LiteBrain(name="cookie")
+brain = LiteBrain(name="cookiie")
 # 경량 버전 사용
 ```
 

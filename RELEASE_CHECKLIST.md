@@ -30,7 +30,7 @@
 
 ### 릴리즈 제목
 ```
-v4.3.0 - Cookie v1.0 (1st Cookie Revolution) 🍪
+v4.3.0 - Cookiie v1.0 (1st Cookiie Revolution) 🍪
 ```
 
 ### 주요 변경사항
@@ -51,8 +51,8 @@ pip install -e ".[all]"
 ```python
 from babyhippo.integration import CuriousBrain
 
-cookie = CuriousBrain(name="Cookie")
-response = cookie.think("안녕하세요!")
+cookiie = CuriousBrain(name="Cookiie")
+response = cookiie.think("안녕하세요!")
 print(response)
 ```
 
@@ -60,12 +60,12 @@ print(response)
 
 1. **태그 생성**
    ```bash
-   git tag -a v4.3.0 -m "Cookie v1.0 - 1st Cookie Revolution"
+   git tag -a v4.3.0 -m "Cookiie v1.0 - 1st Cookiie Revolution"
    git push origin v4.3.0
    ```
 
 2. **릴리즈 페이지에서**
-   - 제목: `v4.3.0 - Cookie v1.0 (1st Cookie Revolution) 🍪`
+   - 제목: `v4.3.0 - Cookiie v1.0 (1st Cookiie Revolution) 🍪`
    - 설명: CHANGELOG.md의 v4.3.0 섹션 복사
    - 첨부 파일:
      - Source code (zip) - GitHub 자동 생성

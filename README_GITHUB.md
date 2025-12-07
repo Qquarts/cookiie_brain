@@ -51,14 +51,14 @@ pip install -e ".[all]"
 ```python
 from babyhippo.integration import CuriousBrain
 
-# Cookie 생성
-cookie = CuriousBrain(name="Cookie")
+# Cookiie 생성
+cookiie = CuriousBrain(name="Cookiie")
 
 # 학습
-cookie.think("나는 GNJz라고 해")
+cookiie.think("나는 GNJz라고 해")
 
 # 질문
-response = cookie.think("너 이름이 뭐야?")
+response = cookiie.think("너 이름이 뭐야?")
 print(response)  # "GNJz입니다!"
 ```
 
@@ -68,11 +68,11 @@ print(response)  # "GNJz입니다!"
 # 기본 사용법
 python examples/01_basic_usage.py
 
-# Cookie v1.0 데모
-python examples/04_cookie_v1_demo.py
+# Cookiie v1.0 데모
+python examples/04_cookiie_v1_demo.py
 
 # 대화형 인터페이스
-python examples/05_cookie_interactive.py
+python examples/05_cookiie_interactive.py
 ```
 
 ---
@@ -119,7 +119,7 @@ python examples/05_cookie_interactive.py
 ┌───────────────────────────────────────────────────────────────────────────────┐
 │  🔗 INTEGRATION (integration/)                                                │
 │  • BabyBrain - Full-featured brain                                           │
-│  • CuriousBrain - Learning AI (Cookie) ⭐                                    │
+│  • CuriousBrain - Learning AI (Cookiie) ⭐                                    │
 │  • BrainLLM - Personal LLM (nanoGPT)                                          │
 │  • DreamManager - Sleep consolidation                                        │
 │  • HippoEvolution - Evolution system 🎖️                                     │
@@ -222,7 +222,7 @@ This project is built on the knowledge and inspiration from neuroscience, artifi
 
 ---
 
-**Version**: 4.3.0 (Cookie v1.0 - 1st Cookie Revolution)  
+**Version**: 4.3.0 (Cookiie v1.0 - 1st Cookiie Revolution)  
 **Author**: GNJz (Qquarts)  
 **GitHub**: https://github.com/qquarts/babyhippo
 

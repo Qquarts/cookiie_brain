@@ -1,4 +1,4 @@
-# 🔋 Cookie 저전력 모드 가이드
+# 🔋 Cookiie 저전력 모드 가이드
 
 > **"알뜰한 스마트 AI"** - 라즈베리파이에서도 무리없이 작동하는 저전력 고효율 AI
 
@@ -15,13 +15,13 @@
 
 ## ⚡ 기본 설정 (저전력 모드)
 
-Cookie는 기본적으로 **저전력 모드**로 설정되어 있습니다:
+Cookiie는 기본적으로 **저전력 모드**로 설정되어 있습니다:
 
 ### 1. 개인 LLM 비활성화
 
 ```python
 # 기본 설정
-cookie.config['use_personal_llm'] = False  # 기본값: False
+cookiie.config['use_personal_llm'] = False  # 기본값: False
 ```
 
 **효과**:
@@ -74,7 +74,7 @@ brain = BrainLLM(model_path=None)  # 기본값: None
 from babyhippo.integration import CuriousBrain
 
 # 기본 설정으로 초기화 (저전력 모드)
-cookie = CuriousBrain(name="cookie")
+cookiie = CuriousBrain(name="cookiie")
 
 # 개인 LLM은 기본적으로 비활성화됨
 # GPU 사용 안 함
@@ -87,7 +87,7 @@ cookie = CuriousBrain(name="cookie")
 from babyhippo.integration import LiteBrain
 
 # 경량 버전 (뉴런 모델 없음)
-brain = LiteBrain(name="cookie")
+brain = LiteBrain(name="cookiie")
 ```
 
 **특징**:
@@ -104,10 +104,10 @@ brain = LiteBrain(name="cookie")
 ```python
 from babyhippo.integration import CuriousBrain
 
-cookie = CuriousBrain(name="cookie")
+cookiie = CuriousBrain(name="cookiie")
 
 # 개인 LLM 활성화 (발열/전력 소비 증가)
-cookie.config['use_personal_llm'] = True
+cookiie.config['use_personal_llm'] = True
 
 # GPU 사용 (BrainLLM 초기화 시)
 from babyhippo.integration.brain_llm import BrainLLM
@@ -154,13 +154,13 @@ hippo = HippoMemory(max_neurons=102)  # 기본값: 102개
 # Panorama 메모리 초기화 시
 from babyhippo.memory import PanoramaMemory
 
-panorama = PanoramaMemory(name="cookie", max_memories=1000)
+panorama = PanoramaMemory(name="cookiie", max_memories=1000)
 ```
 
 ### 3. 자동 공고화 비활성화
 
 ```python
-cookie.config['auto_consolidate'] = False  # 수동 공고화
+cookiie.config['auto_consolidate'] = False  # 수동 공고화
 ```
 
 ---
@@ -186,7 +186,7 @@ cookie.config['auto_consolidate'] = False  # 수동 공고화
 ```python
 from babyhippo.integration import CuriousBrain
 
-cookie = CuriousBrain(name="cookie")
+cookiie = CuriousBrain(name="cookiie")
 # 기본 설정 사용 (저전력 모드)
 ```
 
@@ -195,7 +195,7 @@ cookie = CuriousBrain(name="cookie")
 ```python
 from babyhippo.integration import LiteBrain
 
-brain = LiteBrain(name="cookie")
+brain = LiteBrain(name="cookiie")
 # 경량 버전 사용
 ```
 
@@ -204,15 +204,15 @@ brain = LiteBrain(name="cookie")
 ```python
 from babyhippo.integration import CuriousBrain
 
-cookie = CuriousBrain(name="cookie")
-cookie.config['use_personal_llm'] = True  # 필요 시에만 활성화
+cookiie = CuriousBrain(name="cookiie")
+cookiie.config['use_personal_llm'] = True  # 필요 시에만 활성화
 ```
 
 ---
 
 ## 🎯 결론
 
-Cookie는 기본적으로 **저전력 모드**로 설정되어 있어:
+Cookiie는 기본적으로 **저전력 모드**로 설정되어 있어:
 
 - ✅ 라즈베리파이에서 무리없이 작동
 - ✅ 발열 최소화
