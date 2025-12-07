@@ -1,0 +1,173 @@
+PHAM-OPEN LICENSE v2.0
+======================
+
+Copyright (c) 2024-2025 GNJz (Qquarts Co.)
+
+"Code is Free. Success is Shared. Ledger is Complete."
+
+================================================================================
+1. DEFINITIONS (정의)
+================================================================================
+
+"Software" means the BabyHippo source code, documentation, and all associated 
+files distributed under this license.
+
+"Creator" means the original author(s) who created the Software.
+  - Creator Wallet: 0x99779F19376c4740d4F555083F6dcB2B47C76bF5
+
+"Contributor" means any person who modifies, extends, or improves the Software.
+
+"Contribution Score" means a numeric value (0.0 to 1.0) calculated by the 
+PHAM Sign system based on the significance of code changes.
+
+"Revenue" means any monetary income, tokens, or value generated through the 
+use of this Software in commercial products or services.
+
+"Ledger" means the blockchain-based record of all contributions and their 
+corresponding scores.
+
+================================================================================
+2. FREE USAGE GRANT (무료 사용 허가)
+================================================================================
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this Software, to:
+
+  a) Use - Run and operate the Software for any purpose
+  b) Study - Read and learn from the source code
+  c) Modify - Make changes and improvements
+  d) Distribute - Share copies with others
+  e) Sublicense - Include in other projects
+
+WITHOUT RESTRICTION for:
+  - Personal use
+  - Educational use
+  - Research and academic use
+  - Non-profit use
+  - Evaluation and testing
+
+================================================================================
+3. CONTRIBUTION RECORDING (기여 기록)
+================================================================================
+
+3.1 All modifications to the Software SHOULD be recorded using the PHAM Sign
+    system to generate a Contribution Score.
+
+3.2 The Contribution Score is calculated based on:
+    - Byte changes (25%)
+    - Text similarity changes (35%)
+    - AST structure changes (30%)
+    - Execution result changes (10%)
+
+3.3 Contributors are encouraged, but not required, to sign their contributions.
+    Unsigned contributions may not be eligible for revenue sharing.
+
+================================================================================
+4. REVENUE SHARING (수익 분배)
+================================================================================
+
+4.1 TRIGGER: Revenue sharing is activated when:
+    - The Software or its derivatives generate more than $10,000 USD in 
+      cumulative revenue, OR
+    - A product using the Software is sold commercially
+
+4.2 BASE ROYALTY: The Creator receives 6% of gross revenue.
+
+4.3 CONTRIBUTOR ROYALTY: Remaining royalty pool is distributed proportionally
+    based on Contribution Scores recorded in the Ledger.
+
+4.4 CALCULATION:
+    Creator Share = Revenue × 0.06
+    
+    For each Contributor:
+    Share = (Contribution Score / Total Contribution Scores) × (Revenue × 0.04)
+
+4.5 PAYMENT: Payments may be made via:
+    - Cryptocurrency to the registered wallet addresses
+    - Traditional bank transfer (if registered)
+    - PHAM Token distribution
+
+4.6 REPORTING: Revenue-generating users must report quarterly to:
+    [opensource@qquarts.com]
+
+================================================================================
+5. BLOCKCHAIN VERIFICATION (블록체인 검증)
+================================================================================
+
+5.1 The original Software hash is recorded on the blockchain as proof of
+    authorship and timestamp.
+
+5.2 The Ledger of contributions is maintained on a public blockchain for
+    transparency and immutability.
+
+5.3 Anyone can verify:
+    - Original authorship
+    - Contribution history
+    - Revenue distribution records
+
+================================================================================
+6. WARRANTY DISCLAIMER (보증 면책)
+================================================================================
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+IN NO EVENT SHALL THE CREATORS OR CONTRIBUTORS BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+================================================================================
+7. ETHICAL USE (윤리적 사용)
+================================================================================
+
+Users of this Software agree NOT to use it for:
+  a) Weapons development or military applications
+  b) Surveillance systems targeting individuals
+  c) Disinformation or manipulation campaigns
+  d) Discrimination based on race, gender, religion, or other protected classes
+  e) Any application that violates basic human rights
+
+Violation of this clause may result in termination of license.
+
+================================================================================
+8. TERMINATION (종료)
+================================================================================
+
+8.1 This license is effective until terminated.
+
+8.2 Your rights under this license will terminate automatically if you:
+    - Fail to comply with revenue sharing obligations after notification
+    - Use the Software for prohibited purposes (Section 7)
+    - Intentionally falsify contribution records
+
+8.3 Upon termination, you must destroy all copies of the Software.
+
+================================================================================
+9. GENERAL (일반 조항)
+================================================================================
+
+9.1 This license shall be governed by the laws of the Republic of Korea.
+
+9.2 If any provision of this license is held to be unenforceable, the 
+    remaining provisions shall remain in effect.
+
+9.3 This license represents the complete agreement concerning the subject
+    matter hereof.
+
+================================================================================
+CONTACT
+================================================================================
+
+Creator: GNJz (Qquarts Co.)
+Email: opensource@qquarts.com
+Wallet: 0x99779F19376c4740d4F555083F6dcB2B47C76bF5
+GitHub: https://github.com/qquarts/babyhippo
+
+================================================================================
+
+By using this Software, you agree to the terms of this license.
+
+Last updated: December 2024
+

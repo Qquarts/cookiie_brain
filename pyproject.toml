@@ -1,0 +1,140 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "babyhippo"
+version = "4.3.0"
+description = "Bio-inspired AI memory system mimicking hippocampal functions"
+readme = "README.md"
+license = {text = "PHAM-OPEN-2.0"}
+authors = [
+    {name = "GNJz", email = "contact@qquarts.com"}
+]
+maintainers = [
+    {name = "Qquarts Co.", email = "opensource@qquarts.com"}
+]
+keywords = [
+    "artificial-intelligence",
+    "machine-learning",
+    "neural-network",
+    "memory-system",
+    "hippocampus",
+    "stdp",
+    "bio-inspired",
+    "edge-ai",
+    "cognitive-science",
+    "neuroscience"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: Other/Proprietary License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.20.0",
+]
+
+[project.optional-dependencies]
+full = [
+    "networkx>=2.6.0",
+    "requests>=2.28.0",
+    "flask>=2.0.0",
+    "flask-cors>=3.0.10",
+]
+llm = [
+    "openai>=1.0.0",
+    "anthropic>=0.18.0",
+]
+blockchain = [
+    "web3>=6.0.0",
+    "python-dotenv>=1.0.0",
+]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "isort>=5.0.0",
+    "mypy>=1.0.0",
+]
+all = [
+    "babyhippo[full,llm,blockchain,dev]"
+]
+
+[project.urls]
+Homepage = "https://github.com/qquarts/babyhippo"
+Documentation = "https://github.com/qquarts/babyhippo/tree/main/docs"
+Repository = "https://github.com/qquarts/babyhippo.git"
+Issues = "https://github.com/qquarts/babyhippo/issues"
+Changelog = "https://github.com/qquarts/babyhippo/blob/main/CHANGELOG.md"
+
+[project.scripts]
+babyhippo = "babyhippo.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["babyhippo*"]
+
+[tool.setuptools.package-data]
+babyhippo = ["*.json", "*.txt"]
+
+# ============================================================
+# Development Tools Configuration
+# ============================================================
+
+[tool.black]
+line-length = 100
+target-version = ['py39', 'py310', 'py311', 'py312']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+    __pycache__
+    | \.git
+    | \.venv
+    | build
+    | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+skip_gitignore = true
+known_first_party = ["babyhippo"]
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short"
+
+[tool.coverage.run]
+source = ["babyhippo"]
+omit = ["tests/*", "*/__pycache__/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+]
+

@@ -1,0 +1,41 @@
+# MANIFEST.in - 포함할 파일 목록
+# ================================
+# Python 패키지 빌드 시 포함할 추가 파일들
+
+# README 및 문서
+include README.md
+include README_KO.md
+include LICENSE
+include CHANGELOG.md
+include pyproject.toml
+
+# 문서 디렉토리
+recursive-include docs *.md
+
+# 예제 파일
+recursive-include examples *.py
+
+# 테스트 파일
+recursive-include tests *.py
+
+# 설정 파일
+include .gitignore
+
+# 블록체인 관련
+recursive-include blockchain *.py
+recursive-include blockchain *.md
+
+# 스크립트
+recursive-include scripts *.sh
+
+# 제외할 파일
+global-exclude __pycache__
+global-exclude *.py[cod]
+global-exclude *$py.class
+global-exclude *.so
+global-exclude .DS_Store
+global-exclude *.egg-info
+recursive-exclude build *
+recursive-exclude dist *
+recursive-exclude .git *
+
