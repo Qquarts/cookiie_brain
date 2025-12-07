@@ -18,7 +18,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-4.2.0-blue.svg" alt="Version"/>
+  <img src="https://img.shields.io/badge/version-4.3.0-blue.svg" alt="Version"/>
   <img src="https://img.shields.io/badge/python-3.9+-green.svg" alt="Python"/>
   <img src="https://img.shields.io/badge/license-PHAM--OPEN-orange.svg" alt="License"/>
   <img src="https://img.shields.io/badge/blockchain-verified-purple.svg" alt="Blockchain"/>
